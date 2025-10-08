@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
+import 'package:quexa/src/presentation/screens/2.onGoingTask/SecondScreen.dart';
+import 'package:quexa/src/presentation/screens/3.CreateTicket/CreateTicketScreen.dart';
 import 'package:quexa/src/presentation/screens/onBoarding/splashscreen.dart';
+
 
 class Quexa extends StatelessWidget {
   const Quexa({super.key});
@@ -9,11 +12,11 @@ class Quexa extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      // showPerformanceOverlay: true,
-      title: 'Neuflo',
       debugShowCheckedModeBanner: false,
       builder: EasyLoading.init(),
-      home: Splashscreen(),
+      // home: Splashscreen(),
+      // home: Secondscreen(),
+      home: Createticketscreen(),
     );
   }
 }
