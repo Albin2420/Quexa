@@ -21,7 +21,7 @@ class Ticketcardwidget extends StatelessWidget {
       height: 93,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: Colors.grey.shade200,
+        color: const Color(0xffF2F3F5),
         border: Border.all(
           color: Colors.black,
           width: 1.0,
