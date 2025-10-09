@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Button2widget extends StatelessWidget {
-  final data;
+  final String data;
 
   const Button2widget({
     super.key,

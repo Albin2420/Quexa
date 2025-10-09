@@ -1,8 +1,10 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quexa/src/presentation/widgets/Button1Widget.dart';
-import 'package:quexa/src/presentation/widgets/Button2Widget.dart';
-import 'package:quexa/src/presentation/widgets/TicketCardWidget.dart';
+import '../../widgets/Button1Widget.dart';
+import 'package:quexa/src/presentation/widgets/button2widget.dart';
+import 'package:quexa/src/presentation/screens/3.onGoingTask/widgets/ticket_card_widget.dart';
 
 class Secondscreen extends StatelessWidget {
   const Secondscreen({super.key});
@@ -11,28 +13,22 @@ class Secondscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-      backgroundColor: Colors.white,
-      title: Text(
-        'Frontend Development',
-        style: GoogleFonts.zenDots(
-          color: Colors.black,
-          fontSize: 18,
+        backgroundColor: Colors.white,
+        title: Text(
+          'Frontend Development',
+          style: GoogleFonts.zenDots(color: Colors.black, fontSize: 18),
+        ),
+        centerTitle: true,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.pop(context),
         ),
       ),
-      centerTitle: true,
-      leading: IconButton(
-        icon: Icon(Icons.arrow_back, color: Colors.black),
-        onPressed: () => Navigator.pop(context),
-      ),
-    ),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.only(
-              left: 20,
-              right: 20,
-            ),
+            padding: EdgeInsets.only(left: 20, right: 20),
             child: Column(
               children: [
                 Text(
@@ -60,8 +56,14 @@ class Secondscreen extends StatelessWidget {
                 SizedBox(height: 30),
                 Row(
                   children: [
-                    Flexible(child: Button1widget(data: "Create Ticket")),
-
+                    Flexible(
+                      child: Button1widget(
+                        data: "Create Ticket",
+                        onPressed: () {
+                          log("descriptionScreen");
+                        },
+                      ),
+                    ),
                   ],
                 ),
                 SizedBox(height: 30),
@@ -69,7 +71,11 @@ class Secondscreen extends StatelessWidget {
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
-                    return Ticketcardwidget(name: 'Amana', task: 'Authentication', date: '20/10/2023');
+                    return Ticketcardwidget(
+                      name: 'Amana',
+                      task: 'Authentication',
+                      date: '20/10/2023',
+                    );
                   },
                   separatorBuilder: (context, index) {
                     return SizedBox(height: 10);
