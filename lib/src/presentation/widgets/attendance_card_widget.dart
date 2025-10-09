@@ -4,12 +4,12 @@ import 'package:google_fonts/google_fonts.dart';
 class AttendanceCardWidget extends StatelessWidget {
   final String name;
   final String logintime;
-  final String Hours;
+  final String hours;
   const AttendanceCardWidget({
     super.key,
     required this.name,
     required this.logintime,
-    required this.Hours,
+    required this.hours,
   });
 
   @override
@@ -55,10 +55,7 @@ class AttendanceCardWidget extends StatelessWidget {
               children: [
                 Text(
                   'Login: ',
-                  style: GoogleFonts.zenDots(
-                    color: Colors.black,
-                    fontSize: 14,
-                  ),
+                  style: GoogleFonts.zenDots(color: Colors.black, fontSize: 14),
                 ),
                 Text(
                   logintime,
@@ -75,13 +72,10 @@ class AttendanceCardWidget extends StatelessWidget {
               children: [
                 Text(
                   'Hours Logged In: ',
-                  style: GoogleFonts.zenDots(
-                    color: Colors.black,
-                    fontSize: 14,
-                  ),
+                  style: GoogleFonts.zenDots(color: Colors.black, fontSize: 14),
                 ),
                 Text(
-                  '$Hours Hrs',
+                  '$hours Hrs',
                   style: GoogleFonts.zenDots(
                     color: Colors.black,
                     fontSize: 14,

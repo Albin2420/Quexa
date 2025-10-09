@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quexa/src/presentation/screens/2.Home/widgets/taskcard_widget.dart';
+import 'package:quexa/src/presentation/screens/Home/widgets/taskcard_widget.dart';
 
 class Homescreen extends StatelessWidget {
   const Homescreen({super.key});
@@ -64,7 +64,7 @@ class Homescreen extends StatelessWidget {
                     return TaskcardWidget(
                       title: 'Frontend Development',
                       description:
-                      'Design a user-friendly homepage for a mobile app that ensures smooth navigation, clear layout, and quick access to core featuresThe homepage should have an intuitive design with minimal clutter, engaging visuals, and easy-to-use buttons, helping users find what they need instantly. A well-structured homepage improves the overall user experience and keeps users engaged from the very first screen.',
+                          'Design a user-friendly homepage for a mobile app that ensures smooth navigation, clear layout, and quick access to core featuresThe homepage should have an intuitive design with minimal clutter, engaging visuals, and easy-to-use buttons, helping users find what they need instantly. A well-structured homepage improves the overall user experience and keeps users engaged from the very first screen.',
                       deadline: '10/11/2025',
                     );
                   },
