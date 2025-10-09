@@ -95,38 +95,38 @@ class LoginScreen extends StatelessWidget {
                                 ),
                                 SizedBox(height: 8),
                                 TextField(
-                                  controller: TextEditingController(
-                                    text: '',
-                                  ),
+                                  controller: TextEditingController(text: ''),
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 16,
                                   ),
-                                      decoration: InputDecoration(
-                                        filled: true,
-                                        fillColor: Color(0xFFF2F3F5),
-                                        border: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(17),
-                                          borderSide: BorderSide(
-                                            color: Colors.transparent, // invisible border but keeps radius
-                                            width: 1,
-                                          ),
-                                        ),
-                                        enabledBorder: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(17),
-                                          borderSide: BorderSide(
-                                            color: Colors.transparent, // invisible border
-                                            width: 1,
-                                          ),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderRadius: BorderRadius.circular(17),
-                                          borderSide: BorderSide(
-                                            color: Colors.black, // visible on focus
-                                            width: 1,
-                                          ),
-                                        ),
+                                  decoration: InputDecoration(
+                                    filled: true,
+                                    fillColor: Color(0xFFF2F3F5),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(17),
+                                      borderSide: BorderSide(
+                                        color: Colors
+                                            .transparent, // invisible border but keeps radius
+                                        width: 1,
                                       ),
+                                    ),
+                                    enabledBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(17),
+                                      borderSide: BorderSide(
+                                        color: Colors
+                                            .transparent, // invisible border
+                                        width: 1,
+                                      ),
+                                    ),
+                                    focusedBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(17),
+                                      borderSide: BorderSide(
+                                        color: Colors.black, // visible on focus
+                                        width: 1,
+                                      ),
+                                    ),
+                                  ),
                                 ),
                                 SizedBox(height: 37),
                                 Row(
@@ -152,14 +152,16 @@ class LoginScreen extends StatelessWidget {
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(17),
                                       borderSide: BorderSide(
-                                        color: Colors.transparent, // invisible border but keeps radius
+                                        color: Colors
+                                            .transparent, // invisible border but keeps radius
                                         width: 1,
                                       ),
                                     ),
                                     enabledBorder: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(17),
                                       borderSide: BorderSide(
-                                        color: Colors.transparent, // invisible border
+                                        color: Colors
+                                            .transparent, // invisible border
                                         width: 1,
                                       ),
                                     ),
@@ -185,9 +187,7 @@ class LoginScreen extends StatelessWidget {
                                 SizedBox(height: 23),
                                 Button1widget(
                                   data: "Create Ticketed",
-                                  onPressed: () {
-                                    log("login screeen fun()");
-                                  },
+                                  onPressed: () {},
                                 ),
                                 SizedBox(height: 23),
                               ],
