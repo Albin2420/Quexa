@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quexa/src/presentation/widgets/TaskcardWidget.dart';
+import 'package:quexa/src/presentation/screens/2.Home/widgets/taskcard_widget.dart';
 
 class Homescreen extends StatelessWidget {
   const Homescreen({super.key});
