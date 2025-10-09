@@ -6,8 +6,8 @@ import '../../widgets/Button1Widget.dart';
 import 'package:quexa/src/presentation/widgets/button2widget.dart';
 import 'package:quexa/src/presentation/screens/3.onGoingTask/widgets/ticket_card_widget.dart';
 
-class Secondscreen extends StatelessWidget {
-  const Secondscreen({super.key});
+class  DescriptionScreen extends StatelessWidget {
+  const DescriptionScreen ({super.key});
 
   @override
   Widget build(BuildContext context) {
