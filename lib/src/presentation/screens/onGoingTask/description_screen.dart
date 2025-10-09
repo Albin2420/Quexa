@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../widgets/Button1Widget.dart';
 import 'package:quexa/src/presentation/widgets/button2widget.dart';
-import 'package:quexa/src/presentation/screens/3.onGoingTask/widgets/ticket_card_widget.dart';
+import 'package:quexa/src/presentation/screens/onGoingTask/widgets/ticket_card_widget.dart';
 
-class  DescriptionScreen extends StatelessWidget {
-  const DescriptionScreen ({super.key});
+class DescriptionScreen extends StatelessWidget {
+  const DescriptionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
