@@ -1,6 +1,9 @@
+import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quexa/src/presentation/screens/createTicket/widgets/calendar_widget.dart';
+
+import '../../widgets/returning_card.dart';
 
 class Createticketscreen extends StatefulWidget {
   const Createticketscreen({super.key});
@@ -26,20 +29,6 @@ class _CreateticketscreenState extends State<Createticketscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        scrolledUnderElevation: 0,
-        title: Text(
-          'Create Ticket',
-          style: GoogleFonts.zenDots(fontSize: 18, fontWeight: FontWeight.w600),
-        ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -47,6 +36,13 @@ class _CreateticketscreenState extends State<Createticketscreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const SizedBox(height: 10),
+                ReturningWidget(
+                  data: 'Create Ticket',
+                  onPressed: () {
+                    log("message");
+                  },
+                ),
                 const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -170,7 +166,14 @@ class _CreateticketscreenState extends State<Createticketscreen> {
                   ),
                 ),
                 SizedBox(height: 5),
-                Calendarwidget(), //////////////
+                Calendarwidget(
+                  onDateSelected: (dt) {
+                    print(
+                      "Parent received selected date: ${dt}",
+                    );
+                  },
+                ),
+
                 SizedBox(height: 30),
                 Text(
                   'Description',
