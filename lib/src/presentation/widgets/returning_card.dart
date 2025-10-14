@@ -20,9 +20,16 @@ class ReturningWidget extends StatelessWidget {
           children: [
             Icon(Icons.arrow_back, color: Colors.black),
             SizedBox(width: 8),
-            Text(
-              data,
-              style: GoogleFonts.zenDots(fontSize: 20, fontWeight: FontWeight.w600),
+            Expanded(
+              child: Text(
+                data,
+                style: GoogleFonts.zenDots(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
           ],
         ),

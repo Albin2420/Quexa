@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../widgets/Button1Widget.dart';
 import 'package:quexa/src/presentation/widgets/button2widget.dart';
@@ -25,7 +26,7 @@ class DescriptionScreen extends StatelessWidget {
                 ReturningWidget(
                   data: 'Frontend Development',
                   onPressed: () {
-                    log("message");
+                    Get.back();
                   },
                 ),
                 const SizedBox(height: 30),
@@ -62,6 +63,7 @@ class DescriptionScreen extends StatelessWidget {
                         },
                       ),
                     ),
+                    SizedBox(width: 120),
                   ],
                 ),
                 SizedBox(height: 30),
@@ -86,8 +88,9 @@ class DescriptionScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: SafeArea(
-        child: BottomAppBar(
-          color: Colors.transparent,
+        child: Container(
+          color: const Color.fromARGB(0, 255, 255, 255),
+          margin: EdgeInsets.all(8),
           child: Button2widget(data: 'Submit'),
         ),
       ),

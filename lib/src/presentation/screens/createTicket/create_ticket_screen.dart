@@ -168,9 +168,7 @@ class _CreateticketscreenState extends State<Createticketscreen> {
                 SizedBox(height: 5),
                 Calendarwidget(
                   onDateSelected: (dt) {
-                    print(
-                      "Parent received selected date: ${dt}",
-                    );
+                    log("Parent received selected date: $dt");
                   },
                 ),
 

@@ -58,36 +58,34 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               Text('Albin', style: GoogleFonts.zenDots(fontSize: 18)),
-              Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 14, right: 14, top: 10),
-                  child: Column(
-                    children: [
-                      SizedBox(height: 21),
-                      ProfileTabs(
-                        tab_icon: "assets/images/feedback.png",
-                        text: 'Feedback',
-                      ),
-                      SizedBox(height: 21),
-                      ProfileTabs(
-                        tab_icon: "assets/images/help.png",
-                        text: 'Help',
-                      ),
-                      SizedBox(height: 21),
-                      ProfileTabs(
-                        tab_icon: "assets/images/settings.png",
-                        text: 'Settings',
-                      ),
-                      SizedBox(height: 21),
-                      ProfileTabs(
-                        tab_icon: "assets/images/logout.png",
-                        text: 'Logout',
-                        col: Colors.red,
-                        suffixImg: "assets/images/redArrow.png",
-                      ),
-                      SizedBox(height: 21),
-                    ],
-                  ),
+              Padding(
+                padding: const EdgeInsets.only(left: 14, right: 14, top: 10),
+                child: Column(
+                  children: [
+                    SizedBox(height: 21),
+                    ProfileTabs(
+                      tabIcon: "assets/images/feedback.png",
+                      text: 'Feedback',
+                    ),
+                    SizedBox(height: 21),
+                    ProfileTabs(
+                      tabIcon: "assets/images/help.png",
+                      text: 'Help',
+                    ),
+                    SizedBox(height: 21),
+                    ProfileTabs(
+                      tabIcon: "assets/images/settings.png",
+                      text: 'Settings',
+                    ),
+                    SizedBox(height: 21),
+                    ProfileTabs(
+                      tabIcon: "assets/images/logout.png",
+                      text: 'Logout',
+                      col: Colors.red,
+                      suffixImg: "assets/images/redArrow.png",
+                    ),
+                    SizedBox(height: 21),
+                  ],
                 ),
               ),
             ],

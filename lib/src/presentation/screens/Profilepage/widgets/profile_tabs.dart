@@ -2,11 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ProfileTabs extends StatelessWidget {
-  final String tab_icon;
+  final String tabIcon;
   final String text;
   final Color? col;
   final String? suffixImg;
-  const ProfileTabs({super.key, required this.tab_icon, required this.text, this.col,this.suffixImg});
+  const ProfileTabs({
+    super.key,
+    required this.tabIcon,
+    required this.text,
+    this.col,
+    this.suffixImg,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +29,11 @@ class ProfileTabs extends StatelessWidget {
             width: 24,
             height: 24,
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(tab_icon)),
+              image: DecorationImage(image: AssetImage(tabIcon)),
             ),
           ),
           SizedBox(width: 13),
-          Text(text, style: GoogleFonts.zenDots(fontSize: 16,color: col)),
+          Text(text, style: GoogleFonts.zenDots(fontSize: 16, color: col)),
           Spacer(),
           Container(
             width: 12,
@@ -38,7 +44,7 @@ class ProfileTabs extends StatelessWidget {
                   suffixImg != null
                       ? suffixImg! // if passed, use this
                       : 'assets/images/arrow.png', // else fallback
-                  ),
+                ),
               ),
             ),
           ),

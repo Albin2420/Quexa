@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../widgets/attendance_card_widget.dart';
 import '../../widgets/returning_card.dart';
@@ -33,8 +32,8 @@ class DailyLoginPage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return AttendanceCardWidget(
                       name: 'Amana',
-                      logintime: '9.00 am', hours: '7 hours',
-
+                      logintime: '9.00 am',
+                      hours: '7 hours',
                     );
                   },
                   separatorBuilder: (context, index) {

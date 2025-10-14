@@ -1,15 +1,12 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../widgets/notification_card_widget.dart';
 import '../../widgets/returning_card.dart';
 
 class NotificationScreen extends StatelessWidget {
-  const NotificationScreen({
-    super.key,
-  });
+  const NotificationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +31,7 @@ class NotificationScreen extends StatelessWidget {
                   physics: NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
                     return Notificationcardwidget(
-                      name:'Amana',
+                      name: 'Amana',
                       reason: 'Request for leave for Satarday',
                       date: '12/12/12',
                     );
