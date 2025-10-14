@@ -1,8 +1,8 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quexa/src/presentation/screens/Home/home_screen.dart';
 
 import '../../widgets/Button1Widget.dart';
 
@@ -186,8 +186,10 @@ class LoginScreen extends StatelessWidget {
                                 ),
                                 SizedBox(height: 23),
                                 Button1widget(
-                                  data: "Create Ticketed",
-                                  onPressed: () {},
+                                  data: "Login",
+                                  onPressed: () {
+                                    Get.to(() => Homescreen());
+                                  },
                                 ),
                                 SizedBox(height: 23),
                               ],

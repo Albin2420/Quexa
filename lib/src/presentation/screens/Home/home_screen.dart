@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quexa/src/presentation/screens/Home/widgets/taskcard_widget.dart';
+import 'package:quexa/src/presentation/screens/onGoingTask/description_screen.dart';
 
 class Homescreen extends StatelessWidget {
   const Homescreen({super.key});
@@ -61,11 +63,16 @@ class Homescreen extends StatelessWidget {
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
-                    return TaskcardWidget(
-                      title: 'Frontend Development',
-                      description:
-                          'Design a user-friendly homepage for a mobile app that ensures smooth navigation, clear layout, and quick access to core featuresThe homepage should have an intuitive design with minimal clutter, engaging visuals, and easy-to-use buttons, helping users find what they need instantly. A well-structured homepage improves the overall user experience and keeps users engaged from the very first screen.',
-                      deadline: '10/11/2025',
+                    return GestureDetector(
+                      onTap: () {
+                        Get.to(() => DescriptionScreen());
+                      },
+                      child: TaskcardWidget(
+                        title: 'Frontend Development',
+                        description:
+                            'Design a user-friendly homepage for a mobile app that ensures smooth navigation, clear layout, and quick access to core featuresThe homepage should have an intuitive design with minimal clutter, engaging visuals, and easy-to-use buttons, helping users find what they need instantly. A well-structured homepage improves the overall user experience and keeps users engaged from the very first screen.',
+                        deadline: '10/11/2025',
+                      ),
                     );
                   },
                   separatorBuilder: (context, index) {

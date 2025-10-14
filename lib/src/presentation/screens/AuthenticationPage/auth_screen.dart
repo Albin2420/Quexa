@@ -2,8 +2,6 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quexa/src/presentation/screens/AuthenticationPage/widgets/auth_tabs.dart';
-import 'package:quexa/src/presentation/widgets/Button1Widget.dart';
-import '../../widgets/button2widget.dart';
 import '../../widgets/returning_card.dart';
 
 class AuthScreen extends StatelessWidget {
@@ -102,7 +100,7 @@ class AuthScreen extends StatelessWidget {
                     text: 'Accept',
                     color: Color(0xFFC2FB2A),
                     textColor: Colors.black,
-                    onPressed: (){
+                    onPressed: () {
                       log("accepted msg");
                     },
                   ),
@@ -115,7 +113,7 @@ class AuthScreen extends StatelessWidget {
                     textColor: Colors.white,
                     onPressed: () {
                       log("declined msg");
-                    }
+                    },
                   ),
                 ),
               ],
