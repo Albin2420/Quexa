@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AuthTabs extends StatelessWidget {
+class ReportingTabs extends StatelessWidget {
   final String text;
   final Color color;
   final Color textColor;
   final VoidCallback onPressed;
 
-  const AuthTabs({
+  const ReportingTabs({
     super.key,
     required this.text,
     required this.color,
