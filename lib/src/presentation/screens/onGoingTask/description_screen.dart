@@ -6,24 +6,14 @@ import '../../widgets/Button1Widget.dart';
 import 'package:quexa/src/presentation/widgets/button2widget.dart';
 import 'package:quexa/src/presentation/screens/onGoingTask/widgets/ticket_card_widget.dart';
 
+import '../../widgets/returning_card.dart';
+
 class DescriptionScreen extends StatelessWidget {
   const DescriptionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Text(
-          'Frontend Development',
-          style: GoogleFonts.zenDots(color: Colors.black, fontSize: 18),
-        ),
-        centerTitle: true,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () => Navigator.pop(context),
-        ),
-      ),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
@@ -31,6 +21,14 @@ class DescriptionScreen extends StatelessWidget {
             padding: EdgeInsets.only(left: 20, right: 20),
             child: Column(
               children: [
+                const SizedBox(height: 10),
+                ReturningWidget(
+                  data: 'Frontend Development',
+                  onPressed: () {
+                    log("message");
+                  },
+                ),
+                const SizedBox(height: 30),
                 Text(
                   'Design a user-friendly homepage for a mobile app that ensures smooth navigation, clear layout, and quick access to core features.\n'
                   'The homepage should have an intuitive design with minimal clutter, engaging visuals, and easy-to-use buttons, helping users find what they need instantly. A well-structured homepage improves the overall user experience and keeps users engaged from the very first screen.',
