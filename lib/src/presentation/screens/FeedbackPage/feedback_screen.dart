@@ -1,14 +1,14 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quexa/src/presentation/screens/AuthenticationPage/widgets/auth_tabs.dart';
+import 'package:quexa/src/presentation/screens/FeedbackPage/widgets/feedback_tabs.dart';
 import '../../widgets/returning_card.dart';
 
-class AuthScreen extends StatelessWidget {
+class ReportingScreen extends StatelessWidget {
   final String url;
   final String description;
 
-  const AuthScreen({super.key, required this.url, required this.description});
+  const ReportingScreen({super.key, required this.url, required this.description});
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +96,7 @@ class AuthScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Expanded(
-                  child: AuthTabs(
+                  child: ReportingTabs(
                     text: 'Accept',
                     color: Color(0xFFC2FB2A),
                     textColor: Colors.black,
@@ -107,7 +107,7 @@ class AuthScreen extends StatelessWidget {
                 ),
                 SizedBox(width: 20),
                 Expanded(
-                  child: AuthTabs(
+                  child: ReportingTabs(
                     text: 'Decline',
                     color: Colors.black,
                     textColor: Colors.white,
