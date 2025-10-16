@@ -1,14 +1,18 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quexa/src/presentation/screens/FeedbackPage/widgets/feedback_tabs.dart';
-import '../../widgets/returning_card.dart';
+import 'package:quexa/src/presentation/screens/landing_screen/Home/FeedbackPage/widgets/feedback_tabs.dart';
+import 'package:quexa/src/presentation/widgets/returning_card.dart';
 
 class ReportingScreen extends StatelessWidget {
   final String url;
   final String description;
 
-  const ReportingScreen({super.key, required this.url, required this.description});
+  const ReportingScreen({
+    super.key,
+    required this.url,
+    required this.description,
+  });
 
   @override
   Widget build(BuildContext context) {

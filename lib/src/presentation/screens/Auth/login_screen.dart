@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quexa/src/presentation/screens/Home/home_screen.dart';
+import 'package:quexa/src/presentation/screens/landing_screen/Home/home_screen.dart';
 
 import '../../widgets/Button1Widget.dart';
 

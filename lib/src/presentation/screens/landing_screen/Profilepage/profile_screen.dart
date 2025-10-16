@@ -1,8 +1,8 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quexa/src/presentation/screens/Profilepage/widgets/profile_tabs.dart';
-import '../../widgets/returning_card.dart';
+import 'package:quexa/src/presentation/screens/landing_screen/Profilepage/widgets/profile_tabs.dart';
+import 'package:quexa/src/presentation/widgets/returning_card.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
