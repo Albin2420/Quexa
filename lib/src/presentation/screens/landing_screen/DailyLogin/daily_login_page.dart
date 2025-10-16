@@ -1,6 +1,8 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:quexa/src/presentation/widgets/attendance_card_widget.dart';
+import 'package:quexa/src/presentation/widgets/returning_card.dart';
 
 class DailyLoginPage extends StatelessWidget {
   const DailyLoginPage({super.key});
