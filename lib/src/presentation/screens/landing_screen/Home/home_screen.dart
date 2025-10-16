@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quexa/src/presentation/screens/Home/widgets/taskcard_widget.dart';
-import 'package:quexa/src/presentation/screens/onGoingTask/description_screen.dart';
+import 'package:quexa/src/presentation/screens/landing_screen/Home/onGoingTask/description_screen.dart';
+import 'package:quexa/src/presentation/screens/landing_screen/Home/widgets/taskcard_widget.dart';
 
 class Homescreen extends StatelessWidget {
   const Homescreen({super.key});

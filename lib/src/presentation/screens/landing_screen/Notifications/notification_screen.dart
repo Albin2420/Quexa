@@ -1,12 +1,11 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:quexa/src/presentation/widgets/notification_card_widget.dart';
+import 'package:quexa/src/presentation/widgets/returning_card.dart';
 
-import '../../widgets/attendance_card_widget.dart';
-import '../../widgets/returning_card.dart';
-
-class DailyLoginPage extends StatelessWidget {
-  const DailyLoginPage({super.key});
+class NotificationScreen extends StatelessWidget {
+  const NotificationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +17,9 @@ class DailyLoginPage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ReturningWidget(
-                  data: 'Daily Login',
+                  data: 'Create Ticket',
                   onPressed: () {
                     log("message");
                   },
@@ -30,10 +29,10 @@ class DailyLoginPage extends StatelessWidget {
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
-                    return AttendanceCardWidget(
+                    return Notificationcardwidget(
                       name: 'Amana',
-                      logintime: '9.00 am',
-                      hours: '7 hours',
+                      reason: 'Request for leave for Satarday',
+                      date: '12/12/12',
                     );
                   },
                   separatorBuilder: (context, index) {
