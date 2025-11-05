@@ -25,16 +25,36 @@ class Mainscreen extends StatelessWidget {
       }),
       bottomNavigationBar: SafeArea(
         child: Container(
-          color: Colors.yellow,
+          color: Colors.white,
           height: 71,
           padding: EdgeInsets.only(top: 9, bottom: 14),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Expanded(child: Container(color: Colors.red)),
-              Expanded(child: Container(color: Colors.blue)),
-              Expanded(child: Container(color: Colors.brown)),
-              Expanded(child: Container(color: Colors.black)),
+              Expanded(
+                child: Image.asset(
+                  scale: 4,
+                  "assets/icons/selected/home_selected.png",
+                ),
+              ),
+              Expanded(
+                child: Image.asset(
+                  scale: 4,
+                  "assets/icons/selected/login_selected.png",
+                ),
+              ),
+              Expanded(
+                child: Image.asset(
+                  scale: 4,
+                  "assets/icons/selected/notification_selected.png",
+                ),
+              ),
+              Expanded(
+                child: Image.asset(
+                  scale: 4,
+                  "assets/icons/unselected/profile.png",
+                ),
+              ),
             ],
           ),
         ),
