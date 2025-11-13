@@ -10,7 +10,7 @@ class Splashscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(AppstartupController());
     return Scaffold(
-      backgroundColor: const Color(0xFFC2FB2A),
+      backgroundColor: const Color(0xffD8FB54),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -11,7 +11,7 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
         child: SingleChildScrollView(
           child: Column(
             children: [

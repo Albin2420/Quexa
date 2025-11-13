@@ -31,14 +31,14 @@ class LoginScreen extends StatelessWidget {
                 alignment: AlignmentDirectional(1.01, -0.5),
                 child: Container(
                   width: MediaQuery.of(context).size.width / 4 + 30,
-                  decoration: BoxDecoration(color: Color(0xFFC2FB2A)),
+                  decoration: BoxDecoration(color: Color(0xffD8FB54)),
                 ),
               ),
               Container(
                 width: 50,
                 height: 100,
                 decoration: BoxDecoration(
-                  color: Color(0xFFC2FB2A),
+                  color: Color(0xffD8FB54),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(0),
                     bottomRight: Radius.circular(50),

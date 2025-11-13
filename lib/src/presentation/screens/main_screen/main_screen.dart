@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quexa/src/presentation/controller/main_controller/main_controller.dart';
@@ -28,35 +30,65 @@ class Mainscreen extends StatelessWidget {
           color: Colors.white,
           height: 71,
           padding: EdgeInsets.only(top: 9, bottom: 14),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Expanded(
-                child: Image.asset(
-                  scale: 4,
-                  "assets/icons/selected/home_selected.png",
+          child: Obx(() {
+            return Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      ctrl.updatePagefun(indexpage: 0);
+                    },
+                    child: Image.asset(
+                      scale: 4,
+                      ctrl.index.value == 0
+                          ? "assets/icons/selected/home_selected.png"
+                          : "assets/icons/unselected/home.png",
+                    ),
+                  ),
                 ),
-              ),
-              Expanded(
-                child: Image.asset(
-                  scale: 4,
-                  "assets/icons/selected/login_selected.png",
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      ctrl.updatePagefun(indexpage: 1);
+                    },
+                    child: Image.asset(
+                      scale: 4,
+                      ctrl.index.value == 1
+                          ? "assets/icons/selected/login_selected.png"
+                          : "assets/icons/unselected/login.png",
+                    ),
+                  ),
                 ),
-              ),
-              Expanded(
-                child: Image.asset(
-                  scale: 4,
-                  "assets/icons/selected/notification_selected.png",
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      ctrl.updatePagefun(indexpage: 2);
+                    },
+                    child: Image.asset(
+                      scale: 4,
+                      ctrl.index.value == 2
+                          ? "assets/icons/selected/notification_selected.png"
+                          : "assets/icons/unselected/notification.png",
+                    ),
+                  ),
                 ),
-              ),
-              Expanded(
-                child: Image.asset(
-                  scale: 4,
-                  "assets/icons/unselected/profile.png",
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      ctrl.updatePagefun(indexpage: 3);
+                    },
+                    child: Image.asset(
+                      scale: 4,
+                      ctrl.index.value == 3
+                          ? "assets/icons/selected/profile_selected.png"
+                          : "assets/icons/unselected/profile.png",
+                    ),
+                  ),
                 ),
-              ),
-            ],
-          ),
+              ],
+            );
+          }),
         ),
       ),
     );
