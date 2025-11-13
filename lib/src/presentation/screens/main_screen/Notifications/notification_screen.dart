@@ -18,12 +18,7 @@ class NotificationScreen extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: 10),
-                ReturningWidget(
-                  data: 'Create Ticket',
-                  onPressed: () {
-                    log("message");
-                  },
-                ),
+                ReturningWidget(data: 'Notifications', onPressed: () {}),
                 SizedBox(height: 30),
                 ListView.separated(
                   shrinkWrap: true,
@@ -31,14 +26,14 @@ class NotificationScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Notificationcardwidget(
                       name: 'Amana',
-                      reason: 'Request for leave for Satarday',
-                      date: '12/12/12',
+                      reason: 'Request for leave on Saturday',
+                      date: '12/12/2025',
                     );
                   },
                   separatorBuilder: (context, index) {
-                    return SizedBox(height: 10);
+                    return SizedBox(height: 15);
                   },
-                  itemCount: 7,
+                  itemCount: 4,
                 ),
               ],
             ),

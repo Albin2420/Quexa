@@ -103,7 +103,7 @@ class ReportingScreen extends StatelessWidget {
                 Expanded(
                   child: ReportingTabs(
                     text: 'Accept',
-                    color: Color(0xFFC2FB2A),
+                    color: Color(0xffD8FB54),
                     textColor: Colors.black,
                     onPressed: () {
                       log("accepted msg");

@@ -11,7 +11,6 @@ class TaskcardWidget extends StatelessWidget {
     required this.title,
     required this.description,
     required this.deadline,
-
   });
 
   @override
@@ -44,7 +43,7 @@ class TaskcardWidget extends StatelessWidget {
                   width: 30,
                   height: 30,
                   decoration: const BoxDecoration(
-                    color: Color(0xFFC2FB2A),
+                    color: Color(0xffD8FB54),
                     shape: BoxShape.circle,
                   ),
                   child: const Icon(
@@ -61,19 +60,14 @@ class TaskcardWidget extends StatelessWidget {
               child: Text(
                 description,
                 textAlign: TextAlign.justify,
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                ),
+                style: GoogleFonts.poppins(fontSize: 16),
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
               ),
             ),
             SizedBox(height: 11),
             Padding(
-              padding: const EdgeInsets.only(
-                bottom: 8,
-                top: 11,
-              ),
+              padding: const EdgeInsets.only(bottom: 8, top: 11),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -88,15 +82,15 @@ class TaskcardWidget extends StatelessWidget {
                   ),
                   Container(
                     width: 30,
-                      height: 30,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/defaultprofile.png"),
-                          fit: BoxFit.cover,
-                        ),
-                        ),
+                    height: 30,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                        image: AssetImage("assets/images/defaultprofile.png"),
+                        fit: BoxFit.cover,
                       ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -106,4 +100,3 @@ class TaskcardWidget extends StatelessWidget {
     );
   }
 }
-

@@ -4,10 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class Button2widget extends StatelessWidget {
   final String data;
 
-  const Button2widget({
-    super.key,
-    required this.data,
-  });
+  const Button2widget({super.key, required this.data});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +12,7 @@ class Button2widget extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: BoxDecoration(
-        color: Color(0xFFC2FB2A),
+        color: Color(0xffD8FB54),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Row(
